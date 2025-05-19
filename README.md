@@ -13,3 +13,19 @@
 # setup instructions
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
+# Install Dependencies
+pip install -r requirement.txt
+Create a file named .env in the project root
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=your_password_here
+DB_NAME=inventory
+
+# Addd Data
+python datascript.py
+
+# run
+python -m uvicorn main:app --reload
+
